@@ -3,7 +3,7 @@ import LilyProfile from "../images/LilyProfile5.jpg";
 
 const About = () => {
   return (
-    <div className="flex flex-row">
+    <div className="flex md:flex-row">
       <img className="rounded-full h-64 w-64" src={LilyProfile} />
       <div className="ml-4">
         <h1>Hello,</h1>
