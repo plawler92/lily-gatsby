@@ -11,14 +11,14 @@ const createLink = (url, text) => {
 
 const Header = ({ siteTitle }) => {
     const links = [createLink("/#about", "About"), createLink("/#services", "Services"),
-        createLink("/#gallery", "Gallery"), createLink("/contact", "Contact")]
+        createLink("/#gallery", "Gallery")]
     
     return (
     <header className="flex items-center justify-center py-4 gap-5">
         <div className="flex-shrink-0 ml-10 cursor-pointer">
                 <span class="ml-1 text-3xl font-semibold"><Link to="/">Lily Pozos</Link></span>
         </div>
-        <nav>
+        <nav className="hidden md:display-block">
             <ul className="flex mr-10 font-semibold">
                 {links.map(link => (
                     <li className="mr-6 p-1">

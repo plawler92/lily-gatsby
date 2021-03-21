@@ -1,11 +1,12 @@
 import React from "react"
+import { Link } from "gatsby"
 import { FaFacebook, FaInstagram, FaCopyright, FaMusic } from "react-icons/fa"
 
 const Footer = () => (
     <footer className="bg-blue-400">
         <div className="flex flex-col justify-center items-center">
             <div>
-                Contact <a href="#">lilypozos@gmail.com</a>
+                <Link to="/contact">Contact</Link>
             </div>
             <div className="flex flex-row gap-2">
                 Follow me
